@@ -1,0 +1,912 @@
+Enter file name:
+send 16
+total = 1205686table: 94 / 256 
+(s: Y, f: 145, code: (null))
+(s: ", f: 6117, code: (null))
+(s: D, f: 335, code: (null))
+(s: , f: 22785, code: (null))
+(s: f, f: 20435, code: (null))
+(s: /, f: 26, code: (null))
+(s: Q, f: 43, code: (null))
+(s: s, f: 59693, code: (null))
+(s: ', f: 909, code: (null))
+(s: I, f: 3746, code: (null))
+(s: k, f: 5309, code: (null))
+(s: 4, f: 9, code: (null))
+(s: V, f: 1264, code: (null))
+(s: x, f: 892, code: (null))
+(s: ©, f: 1, code: (null))
+(s: A, f: 2322, code: (null))
+(s: c, f: 20206, code: (null))
+(s: 
+, f: 22785, code: (null))
+(s: ,, f: 19092, code: (null))
+(s: N, f: 851, code: (null))
+(s: p, f: 14047, code: (null))
+(s: 9, f: 10, code: (null))
+(s: Ã, f: 934, code: (null))
+(s: [, f: 19, code: (null))
+(s: $, f: 2, code: (null))
+(s: F, f: 414, code: (null))
+(s: h, f: 65054, code: (null))
+(s: 1, f: 60, code: (null))
+(s: », f: 1, code: (null))
+(s: S, f: 988, code: (null))
+(s: u, f: 26869, code: (null))
+(s: ¦, f: 920, code: (null))
+(s: ), f: 38, code: (null))
+(s: K, f: 41, code: (null))
+(s: m, f: 22990, code: (null))
+(s: 6, f: 8, code: (null))
+(s: X, f: 100, code: (null))
+(s: !, f: 1080, code: (null))
+(s: z, f: 611, code: (null))
+(s: «, f: 2, code: (null))
+(s: C, f: 2379, code: (null))
+(s: e, f: 116678, code: (null))
+(s: ï, f: 1, code: (null))
+(s: ., f: 9400, code: (null))
+(s: P, f: 1720, code: (null))
+(s: r, f: 52707, code: (null))
+(s: ;, f: 2401, code: (null))
+(s: ], f: 19, code: (null))
+(s: H, f: 1500, code: (null))
+(s: j, f: 569, code: (null))
+(s: 3, f: 17, code: (null))
+(s: U, f: 327, code: (null))
+(s: †, f: 8, code: (null))
+(s: w, f: 21647, code: (null))
+(s: @, f: 2, code: (null))
+(s: b, f: 11225, code: (null))
+(s: M, f: 540, code: (null))
+(s: o, f: 66814, code: (null))
+(s: 8, f: 18, code: (null))
+(s: Z, f: 18, code: (null))
+(s: #, f: 1, code: (null))
+(s: E, f: 499, code: (null))
+(s: g, f: 17363, code: (null))
+(s: 0, f: 24, code: (null))
+(s: R, f: 646, code: (null))
+(s: t, f: 82768, code: (null))
+(s: (, f: 38, code: (null))
+(s: J, f: 158, code: (null))
+(s: l, f: 34026, code: (null))
+(s: 5, f: 17, code: (null))
+(s: ¿, f: 1, code: (null))
+(s: W, f: 789, code: (null))
+(s:  , f: 193137, code: (null))
+(s: y, f: 13495, code: (null))
+(s: B, f: 1145, code: (null))
+(s: d, f: 39844, code: (null))
+(s: -, f: 2542, code: (null))
+(s: O, f: 709, code: (null))
+(s: q, f: 769, code: (null))
+(s: :, f: 217, code: (null))
+(s: %, f: 1, code: (null))
+(s: G, f: 725, code: (null))
+(s: i, f: 64168, code: (null))
+(s: 2, f: 16, code: (null))
+(s: T, f: 2867, code: (null))
+(s: v, f: 8447, code: (null))
+(s: §, f: 1, code: (null))
+(s: ?, f: 1016, code: (null))
+(s: a, f: 68597, code: (null))
+(s: *, f: 30, code: (null))
+(s: ´, f: 2, code: (null))
+(s: L, f: 1372, code: (null))
+(s: n, f: 61107, code: (null))
+(s: 7, f: 6, code: (null))
+number of bytes in table: 94
+1 / 256
+2 / 256
+3 / 256
+4 / 256
+5 / 256
+6 / 256
+7 / 256
+8 / 256
+9 / 256
+10 / 256
+11 / 256
+12 / 256
+13 / 256
+14 / 256
+15 / 256
+16 / 256
+18 / 256
+19 / 256
+20 / 256
+21 / 256
+22 / 256
+23 / 256
+24 / 256
+25 / 256
+26 / 256
+27 / 256
+28 / 256
+29 / 256
+30 / 256
+32 / 256
+33 / 256
+34 / 256
+35 / 256
+36 / 256
+37 / 256
+38 / 256
+40 / 256
+41 / 256
+42 / 256
+43 / 256
+44 / 256
+45 / 256
+46 / 256
+47 / 256
+48 / 256
+49 / 256
+50 / 256
+51 / 256
+52 / 256
+53 / 256
+54 / 256
+55 / 256
+56 / 256
+57 / 256
+58 / 256
+59 / 256
+60 / 256
+61 / 256
+62 / 256
+63 / 256
+64 / 256
+65 / 256
+66 / 256
+67 / 256
+68 / 256
+69 / 256
+70 / 256
+71 / 256
+72 / 256
+73 / 256
+74 / 256
+75 / 256
+76 / 256
+77 / 256
+78 / 256
+79 / 256
+80 / 256
+81 / 256
+82 / 256
+83 / 256
+84 / 256
+85 / 256
+86 / 256
+87 / 256
+88 / 256
+89 / 256
+90 / 256
+91 / 256
+92 / 256
+93 / 256
+94 / 256
+Heap: symbol=¿, freq=1
+Heap: symbol=%, freq=1
+Heap: symbol=», freq=1
+Heap: symbol=6, freq=8
+Heap: symbol=ï, freq=1
+Heap: symbol=$, freq=2
+Heap: symbol=©, freq=1
+Heap: symbol=5, freq=17
+Heap: symbol=X, freq=100
+Heap: symbol=§, freq=1
+Heap: symbol=´, freq=2
+Heap: symbol=4, freq=9
+Heap: symbol=@, freq=2
+Heap: symbol=8, freq=18
+Heap: symbol=#, freq=1
+Heap: symbol=0, freq=24
+Heap: symbol=K, freq=41
+Heap: symbol=W, freq=789
+Heap: symbol=z, freq=611
+Heap: symbol=«, freq=2
+Heap: symbol=2, freq=16
+Heap: symbol=9, freq=10
+Heap: symbol=7, freq=6
+Heap: symbol=[, freq=19
+Heap: symbol=3, freq=17
+Heap: symbol=†, freq=8
+Heap: symbol=V, freq=1264
+Heap: symbol=1, freq=60
+Heap: symbol=Q, freq=43
+Heap: symbol=Z, freq=18
+Heap: symbol=E, freq=499
+Heap: symbol=R, freq=646
+Heap: symbol=), freq=38
+Heap: symbol=J, freq=158
+Heap: symbol=c, freq=20206
+Heap: symbol=", freq=6117
+Heap: symbol=', freq=909
+Heap: symbol=!, freq=1080
+Heap: symbol=O, freq=709
+Heap: symbol=:, freq=217
+Heap: symbol=G, freq=725
+Heap: symbol=Y, freq=145
+Heap: symbol=v, freq=8447
+Heap: symbol=?, freq=1016
+Heap: symbol=*, freq=30
+Heap: symbol=L, freq=1372
+Heap: symbol=Ã, freq=934
+Heap: symbol=], freq=19
+Heap: symbol=H, freq=1500
+Heap: symbol=j, freq=569
+Heap: symbol=/, freq=26
+Heap: symbol=U, freq=327
+Heap: symbol=F, freq=414
+Heap: symbol=w, freq=21647
+Heap: symbol=h, freq=65054
+Heap: symbol=b, freq=11225
+Heap: symbol=M, freq=540
+Heap: symbol=o, freq=66814
+Heap: symbol=x, freq=892
+Heap: symbol=D, freq=335
+Heap: symbol=S, freq=988
+Heap: symbol=u, freq=26869
+Heap: symbol=g, freq=17363
+Heap: symbol=¦, freq=920
+Heap: symbol=A, freq=2322
+Heap: symbol=t, freq=82768
+Heap: symbol=(, freq=38
+Heap: symbol=, freq=22785
+Heap: symbol=l, freq=34026
+Heap: symbol=s, freq=59693
+Heap: symbol=m, freq=22990
+Heap: symbol=
+, freq=22785
+Heap: symbol= , freq=193137
+Heap: symbol=y, freq=13495
+Heap: symbol=B, freq=1145
+Heap: symbol=d, freq=39844
+Heap: symbol=-, freq=2542
+Heap: symbol=,, freq=19092
+Heap: symbol=q, freq=769
+Heap: symbol=I, freq=3746
+Heap: symbol=N, freq=851
+Heap: symbol=C, freq=2379
+Heap: symbol=i, freq=64168
+Heap: symbol=e, freq=116678
+Heap: symbol=T, freq=2867
+Heap: symbol=f, freq=20435
+Heap: symbol=p, freq=14047
+Heap: symbol=., freq=9400
+Heap: symbol=a, freq=68597
+Heap: symbol=k, freq=5309
+Heap: symbol=P, freq=1720
+Heap: symbol=r, freq=52707
+Heap: symbol=n, freq=61107
+Heap: symbol=;, freq=2401
+SIZE=92
+heap 93 / 256
+SIZE=91
+heap 92 / 256
+SIZE=90
+heap 91 / 256
+SIZE=89
+heap 90 / 256
+SIZE=88
+heap 89 / 256
+SIZE=87
+heap 88 / 256
+SIZE=86
+heap 87 / 256
+SIZE=85
+heap 86 / 256
+SIZE=84
+heap 85 / 256
+SIZE=83
+heap 84 / 256
+SIZE=82
+heap 83 / 256
+SIZE=81
+heap 82 / 256
+SIZE=80
+heap 81 / 256
+SIZE=79
+heap 80 / 256
+SIZE=78
+heap 79 / 256
+SIZE=77
+heap 78 / 256
+SIZE=76
+heap 77 / 256
+SIZE=75
+heap 76 / 256
+SIZE=74
+heap 75 / 256
+SIZE=73
+heap 74 / 256
+SIZE=72
+heap 73 / 256
+SIZE=71
+heap 72 / 256
+SIZE=70
+heap 71 / 256
+SIZE=69
+heap 70 / 256
+SIZE=68
+heap 69 / 256
+SIZE=67
+heap 68 / 256
+SIZE=66
+heap 67 / 256
+SIZE=65
+heap 66 / 256
+SIZE=64
+heap 65 / 256
+SIZE=63
+heap 64 / 256
+SIZE=62
+heap 63 / 256
+SIZE=61
+heap 62 / 256
+SIZE=60
+heap 61 / 256
+SIZE=59
+heap 60 / 256
+SIZE=58
+heap 59 / 256
+SIZE=57
+heap 58 / 256
+SIZE=56
+heap 57 / 256
+SIZE=55
+heap 56 / 256
+SIZE=54
+heap 55 / 256
+SIZE=53
+heap 54 / 256
+SIZE=52
+heap 53 / 256
+SIZE=51
+heap 52 / 256
+SIZE=50
+heap 51 / 256
+SIZE=49
+heap 50 / 256
+SIZE=48
+heap 49 / 256
+SIZE=47
+heap 48 / 256
+SIZE=46
+heap 47 / 256
+SIZE=45
+heap 46 / 256
+SIZE=44
+heap 45 / 256
+SIZE=43
+heap 44 / 256
+SIZE=42
+heap 43 / 256
+SIZE=41
+heap 42 / 256
+SIZE=40
+heap 41 / 256
+SIZE=39
+heap 40 / 256
+SIZE=38
+heap 39 / 256
+SIZE=37
+heap 38 / 256
+SIZE=36
+heap 37 / 256
+SIZE=35
+heap 36 / 256
+SIZE=34
+heap 35 / 256
+SIZE=33
+heap 34 / 256
+SIZE=32
+heap 33 / 256
+SIZE=31
+heap 32 / 256
+SIZE=30
+heap 31 / 256
+SIZE=29
+heap 30 / 256
+SIZE=28
+heap 29 / 256
+SIZE=27
+heap 28 / 256
+SIZE=26
+heap 27 / 256
+SIZE=25
+heap 26 / 256
+SIZE=24
+heap 25 / 256
+SIZE=23
+heap 24 / 256
+SIZE=22
+heap 23 / 256
+SIZE=21
+heap 22 / 256
+SIZE=20
+heap 21 / 256
+SIZE=19
+heap 20 / 256
+SIZE=18
+heap 19 / 256
+SIZE=17
+heap 18 / 256
+SIZE=16
+heap 17 / 256
+SIZE=15
+heap 16 / 256
+SIZE=14
+heap 15 / 256
+SIZE=13
+heap 14 / 256
+SIZE=12
+heap 13 / 256
+SIZE=11
+heap 12 / 256
+SIZE=10
+heap 11 / 256
+SIZE=9
+heap 10 / 256
+SIZE=8
+heap 9 / 256
+SIZE=7
+heap 8 / 256
+SIZE=6
+heap 7 / 256
+SIZE=5
+heap 6 / 256
+SIZE=4
+heap 5 / 256
+SIZE=3
+heap 4 / 256
+SIZE=2
+heap 3 / 256
+SIZE=1
+heap 2 / 256
+SIZE=0
+heap 1 / 256
+1e1s1n001i1h01o1I1'1¦01Ã1S0001v01g01l00001a1?1E1M001!1B001A1C001.01,01d001t1c1f01;1j1z01V001-1Y1Z1[01)01(1K0001U01R01L0001k1T1D1J1]19171#1»1©001@1ï1§0000001Q01X0001O01G1q000001w00001 1
+101m1b1"1H1W1N001P1F1:101/01101*12161´1$01¿1%01«00000151†140013180000001x00000001r1u1y1p0000000*: 1{left: *, right: *}
+*: 1{left: *, right: *}
+*: 1{left: e, right: *}
+e: 1 
+*: 1{left: s, right: n}
+s: 1 
+n: 1 
+*: 1{left: *, right: *}
+*: 1{left: i, right: h}
+i: 1 
+h: 1 
+*: 1{left: o, right: *}
+o: 1 
+*: 1{left: *, right: l}
+*: 1{left: *, right: g}
+*: 1{left: *, right: v}
+*: 1{left: I, right: *}
+I: 1 
+*: 1{left: *, right: *}
+*: 1{left: ', right: ¦}
+': 1 
+¦: 1 
+*: 1{left: Ã, right: S}
+Ã: 1 
+S: 1 
+v: 1 
+g: 1 
+l: 1 
+*: 1{left: *, right: *}
+*: 1{left: *, right: *}
+*: 1{left: a, right: *}
+a: 1 
+*: 1{left: *, right: d}
+*: 1{left: *, right: ,}
+*: 1{left: *, right: .}
+*: 1{left: *, right: *}
+*: 1{left: *, right: *}
+*: 1{left: ?, right: *}
+?: 1 
+*: 1{left: E, right: M}
+E: 1 
+M: 1 
+*: 1{left: !, right: B}
+!: 1 
+B: 1 
+*: 1{left: A, right: C}
+A: 1 
+C: 1 
+.: 1 
+,: 1 
+d: 1 
+*: 1{left: t, right: *}
+t: 1 
+*: 1{left: *, right: *}
+*: 1{left: c, right: f}
+c: 1 
+f: 1 
+*: 1{left: *, right: w}
+*: 1{left: *, right: *}
+*: 1{left: *, right: *}
+*: 1{left: ;, right: *}
+;: 1 
+*: 1{left: *, right: V}
+*: 1{left: j, right: z}
+j: 1 
+z: 1 
+V: 1 
+*: 1{left: -, right: *}
+-: 1 
+*: 1{left: *, right: L}
+*: 1{left: *, right: R}
+*: 1{left: *, right: U}
+*: 1{left: Y, right: *}
+Y: 1 
+*: 1{left: *, right: *}
+*: 1{left: *, right: )}
+*: 1{left: Z, right: [}
+Z: 1 
+[: 1 
+): 1 
+*: 1{left: (, right: K}
+(: 1 
+K: 1 
+U: 1 
+R: 1 
+L: 1 
+*: 1{left: k, right: *}
+k: 1 
+*: 1{left: T, right: *}
+T: 1 
+*: 1{left: *, right: *}
+*: 1{left: *, right: O}
+*: 1{left: D, right: *}
+D: 1 
+*: 1{left: J, right: *}
+J: 1 
+*: 1{left: *, right: X}
+*: 1{left: *, right: Q}
+*: 1{left: ], right: *}
+]: 1 
+*: 1{left: 9, right: *}
+9: 1 
+*: 1{left: 7, right: *}
+7: 1 
+*: 1{left: *, right: *}
+*: 1{left: #, right: *}
+#: 1 
+*: 1{left: », right: ©}
+»: 1 
+©: 1 
+*: 1{left: @, right: *}
+@: 1 
+*: 1{left: ï, right: §}
+ï: 1 
+§: 1 
+Q: 1 
+X: 1 
+O: 1 
+*: 1{left: G, right: q}
+G: 1 
+q: 1 
+w: 1 
+*: 1{left:  , right: *}
+ : 1 
+*: 1{left: *, right: *}
+*: 1{left: *, right: *}
+*: 1{left: 
+, right: }
+
+: 1 
+: 1 
+*: 1{left: m, right: *}
+m: 1 
+*: 1{left: b, right: *}
+b: 1 
+*: 1{left: ", right: *}
+": 1 
+*: 1{left: *, right: *}
+*: 1{left: H, right: *}
+H: 1 
+*: 1{left: W, right: N}
+W: 1 
+N: 1 
+*: 1{left: P, right: *}
+P: 1 
+*: 1{left: *, right: x}
+*: 1{left: F, right: *}
+F: 1 
+*: 1{left: :, right: *}
+:: 1 
+*: 1{left: *, right: *}
+*: 1{left: *, right: 1}
+*: 1{left: 0, right: /}
+0: 1 
+/: 1 
+1: 1 
+*: 1{left: *, right: *}
+*: 1{left: *, right: *}
+*: 1 
+*: 1{left: 2, right: *}
+2: 1 
+*: 1{left: 6, right: *}
+6: 1 
+*: 1{left: *, right: *}
+*: 1{left: ´, right: $}
+´: 1 
+$: 1 
+*: 1{left: *, right: «}
+*: 1{left: ¿, right: %}
+¿: 1 
+%: 1 
+«: 1 
+*: 1{left: *, right: *}
+*: 1{left: 5, right: *}
+5: 1 
+*: 1{left: †, right: 4}
+†: 1 
+4: 1 
+*: 1{left: 3, right: 8}
+3: 1 
+8: 1 
+x: 1 
+*: 1{left: r, right: *}
+r: 1 
+*: 1{left: u, right: *}
+u: 1 
+*: 1{left: y, right: p}
+y: 1 
+p: 1 
+===========================
+*: 1205686{left: *, right: *}
+*: 500847{left: *, right: *}
+*: 237478{left: e, right: *}
+e: 116678 
+*: 120800{left: s, right: n}
+s: 59693 
+n: 61107 
+*: 263369{left: *, right: *}
+*: 129222{left: i, right: h}
+i: 64168 
+h: 65054 
+*: 134147{left: o, right: *}
+o: 66814 
+*: 67333{left: *, right: l}
+*: 33307{left: *, right: g}
+*: 15944{left: *, right: v}
+*: 7497{left: I, right: *}
+I: 3746 
+*: 3751{left: *, right: *}
+*: 1829{left: ', right: ¦}
+': 909 
+¦: 920 
+*: 1922{left: Ã, right: S}
+Ã: 934 
+S: 988 
+v: 8447 
+g: 17363 
+l: 34026 
+*: 704839{left: *, right: *}
+*: 312058{left: *, right: *}
+*: 145914{left: a, right: *}
+a: 68597 
+*: 77317{left: *, right: d}
+*: 37473{left: *, right: ,}
+*: 18381{left: *, right: .}
+*: 8981{left: *, right: *}
+*: 4280{left: *, right: *}
+*: 2055{left: ?, right: *}
+?: 1016 
+*: 1039{left: E, right: M}
+E: 499 
+M: 540 
+*: 2225{left: !, right: B}
+!: 1080 
+B: 1145 
+*: 4701{left: A, right: C}
+A: 2322 
+C: 2379 
+.: 9400 
+,: 19092 
+d: 39844 
+*: 166144{left: t, right: *}
+t: 82768 
+*: 83376{left: *, right: *}
+*: 40641{left: c, right: f}
+c: 20206 
+f: 20435 
+*: 42735{left: *, right: w}
+*: 21088{left: *, right: *}
+*: 10031{left: *, right: *}
+*: 4845{left: ;, right: *}
+;: 2401 
+*: 2444{left: *, right: V}
+*: 1180{left: j, right: z}
+j: 569 
+z: 611 
+V: 1264 
+*: 5186{left: -, right: *}
+-: 2542 
+*: 2644{left: *, right: L}
+*: 1272{left: *, right: R}
+*: 626{left: *, right: U}
+*: 299{left: Y, right: *}
+Y: 145 
+*: 154{left: *, right: *}
+*: 75{left: *, right: )}
+*: 37{left: Z, right: [}
+Z: 18 
+[: 19 
+): 38 
+*: 79{left: (, right: K}
+(: 38 
+K: 41 
+U: 327 
+R: 646 
+L: 1372 
+*: 11057{left: k, right: *}
+k: 5309 
+*: 5748{left: T, right: *}
+T: 2867 
+*: 2881{left: *, right: *}
+*: 1387{left: *, right: O}
+*: 678{left: D, right: *}
+D: 335 
+*: 343{left: J, right: *}
+J: 158 
+*: 185{left: *, right: X}
+*: 85{left: *, right: Q}
+*: 42{left: ], right: *}
+]: 19 
+*: 23{left: 9, right: *}
+9: 10 
+*: 13{left: 7, right: *}
+7: 6 
+*: 7{left: *, right: *}
+*: 3{left: #, right: *}
+#: 1 
+*: 2{left: », right: ©}
+»: 1 
+©: 1 
+*: 4{left: @, right: *}
+@: 2 
+*: 2{left: ï, right: §}
+ï: 1 
+§: 1 
+Q: 43 
+X: 100 
+O: 709 
+*: 1494{left: G, right: q}
+G: 725 
+q: 769 
+w: 21647 
+*: 392781{left:  , right: *}
+ : 193137 
+*: 199644{left: *, right: *}
+*: 92526{left: *, right: *}
+*: 45570{left: 
+, right: }
+
+: 22785 
+: 22785 
+*: 46956{left: m, right: *}
+m: 22990 
+*: 23966{left: b, right: *}
+b: 11225 
+*: 12741{left: ", right: *}
+": 6117 
+*: 6624{left: *, right: *}
+*: 3140{left: H, right: *}
+H: 1500 
+*: 1640{left: W, right: N}
+W: 789 
+N: 851 
+*: 3484{left: P, right: *}
+P: 1720 
+*: 1764{left: *, right: x}
+*: 872{left: F, right: *}
+F: 414 
+*: 458{left: :, right: *}
+:: 217 
+*: 241{left: *, right: *}
+*: 110{left: *, right: 1}
+*: 50{left: 0, right: /}
+0: 24 
+/: 26 
+1: 60 
+*: 131{left: *, right: *}
+*: 62{left: *, right: *}
+*: 30 
+*: 32{left: 2, right: *}
+2: 16 
+*: 16{left: 6, right: *}
+6: 8 
+*: 8{left: *, right: *}
+*: 4{left: ´, right: $}
+´: 2 
+$: 2 
+*: 4{left: *, right: «}
+*: 2{left: ¿, right: %}
+¿: 1 
+%: 1 
+«: 2 
+*: 69{left: *, right: *}
+*: 34{left: 5, right: *}
+5: 17 
+*: 17{left: †, right: 4}
+†: 8 
+4: 9 
+*: 35{left: 3, right: 8}
+3: 17 
+8: 18 
+x: 892 
+*: 107118{left: r, right: *}
+r: 52707 
+*: 54411{left: u, right: *}
+u: 26869 
+*: 27542{left: y, right: p}
+y: 13495 
+p: 14047 
+(s: Y, f: 1, code: 1011100110000)
+(s: ", f: 1, code: 11101110)
+(s: D, f: 1, code: 101110111000)
+(s: , f: 1, code: 111001)
+(s: f, f: 1, code: 101101)
+(s: /, f: 1, code: 11101111110110010HàÊ)
+(s: Q, f: 1, code: 101110111001101)
+(s: s, f: 1, code: 0010)
+(s: ', f: 1, code: 0111000100)
+(s: I, f: 1, code: 01110000)
+(s: k, f: 1, code: 10111010)
+(s: 4, f: 1, code: 111011111101111011)
+(s: V, f: 1, code: 1011100011)
+(s: x, f: 1, code: 11101111111)
+(s: ©, f: 1, code: 101110111001100111011)
+(s: A, f: 1, code: 100100010)
+(s: c, f: 1, code: 101100)
+(s: 
+, f: 1, code: 111000)
+(s: ,, f: 1, code: 100101)
+(s: N, f: 1, code: 11101111011)
+(s: p, f: 1, code: 1111111)
+(s: 9, f: 1, code: 10111011100110010)
+(s: Ã, f: 1, code: 0111000110)
+(s: [, f: 1, code: 1011100110001001ð=àÊ)
+(s: $, f: 1, code: 11101111110111011101)
+(s: F, f: 1, code: 111011111100)
+(s: h, f: 1, code: 0101)
+(s: 1, f: 1, code: 111011111101101)
+(s: », f: 1, code: 101110111001100111010)
+(s: S, f: 1, code: 0111000111)
+(s: ¦, f: 1, code: 0111000101)
+(s: u, f: 1, code: 111110)
+(s: ), f: 1, code: 101110011000101)
+(s: K, f: 1, code: 101110011000111)
+(s: m, f: 1, code: 111010)
+(s: 6, f: 1, code: 111011111101110110)
+(s: X, f: 1, code: 10111011100111)
+(s: !, f: 1, code: 1001000010)
+(s: z, f: 1, code: 10111000101)
+(s: «, f: 1, code: 11101111110111011111)
+(s: C, f: 1, code: 100100011)
+(s: e, f: 1, code: 000)
+(s: ï, f: 1, code: 101110111001100111110)
+(s: ., f: 1, code: 1001001)
+(s: P, f: 1, code: 1110111110)
+(s: r, f: 1, code: 11110)
+(s: ;, f: 1, code: 101110000)
+(s: ], f: 1, code: 1011101110011000°@àÊ)
+(s: H, f: 1, code: 1110111100)
+(s: j, f: 1, code: 10111000100)
+(s: 3, f: 1, code: 11101111110111110)
+(s: U, f: 1, code: 101110011001)
+(s: †, f: 1, code: 111011111101111010)
+(s: w, f: 1, code: 101111)
+(s: @, f: 1, code: 10111011100110011110)
+(s: b, f: 1, code: 1110110)
+(s: M, f: 1, code: 10010000011)
+(s: o, f: 1, code: 0110)
+(s: 8, f: 1, code: 11101111110111111)
+(s: Z, f: 1, code: 1011100110001000°=àÊ)
