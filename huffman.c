@@ -35,7 +35,6 @@ HeapNode *pop(Stack *stack){
 
 void make_freq_table(char *buf, HashTable *table, int nread){
     for(int i=0; i < nread; i++){
-		// printf("%pn\n", &buf[i]);
         add_frequency(table, &buf[i]);
     }
 }
@@ -328,8 +327,8 @@ void encode(FILE *fin, FILE *fout){
 	}
 }
 
-// void encode_socket(FILE *file, int soc){
-// }
+
+
 void decode(FILE *fin, FILE *fout){
 	// 1. read the number of nodes, one unsinged int.
 	unsigned int num_nodes = 0;

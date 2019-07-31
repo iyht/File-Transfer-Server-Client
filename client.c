@@ -25,6 +25,7 @@ int main(int argc, char **argv){
         char filename[BUFSIZE];
         int size = 0;
         char fileinfo[BUFSIZE];
+        int total_read = 0;
 
         get_filename(filename);
 
@@ -35,25 +36,70 @@ int main(int argc, char **argv){
             file = fopen(filename, "rb");
         }
 
-        //File found. Send file name to server.
-        get_fileinfo_user(&size, filename, fileinfo, file);
-        write_to_socket(soc, fileinfo, strlen(fileinfo));
+
+
+        if( ask_encode_file(file) == 0){
+            char encode_file_name[BUFSIZE];
+            snprintf(encode_file_name, BUFSIZE, "%s.huf", filename);
+            FILE *encode_file = fopen(encode_file_name, "wb+");
+            encode(file,encode_file);
+            fseek(encode_file, 0, 0);
+
+
+            get_fileinfo_user(&size, encode_file_name, fileinfo, encode_file);
+            write_to_socket(soc, fileinfo, strlen(fileinfo));
+
+            char buf[BUFSIZE] = {'\0'};
+            int nread = 0;
+            while((nread = fread(buf, sizeof(char), BUFSIZE, encode_file)) > 0){
+                total_read +=nread;
+                write_to_socket(soc, buf, nread);
+            }
+            fclose(encode_file);
+        }
+
+        else{
+            // Read file into buffer. 
+            get_fileinfo_user(&size, filename, fileinfo, file);
+            write_to_socket(soc, fileinfo, strlen(fileinfo));
+            char buf[BUFSIZE] = {'\0'};
+            int nread = 0;
+            while((nread = fread(buf, sizeof(char), BUFSIZE, file)) > 0){
+                total_read +=nread;
+                write_to_socket(soc, buf, nread);
+            }
+        }
+
+        printf("total send %d", total_read);
+
+        fclose(file);
+
+        // Read file into buffer. 
+        // char buf[BUFSIZE] = {'\0'};
+        // int nread = 0;
+        // int total_read = 0;
+        // // HashTable *table = create_HashTable(TABLESIZE);
+        // while((nread = fread(buf, sizeof(char), BUFSIZE, file)) > 0){
+        //     // make_freq_table(buf, table, nread);
+        //     // total_read +=nread;
+        //     // write_to_socket(soc, buf, nread);
+        // }
 
 
 
-        char fout_name[BUFSIZE];
-        snprintf(fout_name, BUFSIZE, "%s.huf", filename);
-        FILE *fout = fopen(fout_name, "wb");
-        encode(file,fout);
+        // char fout_name[BUFSIZE];
+        // snprintf(fout_name, BUFSIZE, "%s.huf", filename);
+        // FILE *fout = fopen(fout_name, "wb");
+        // encode(file,fout);
         
-        fclose(fout);
+        // fclose(fout);
         
 
-        FILE *de_fin = fopen(fout_name, "rb");
-        FILE *de_fout = fopen("book_result.txt", "wb");
-        decode(de_fin, de_fout);
-        fclose(de_fin);
-        fclose(de_fout);
+        // FILE *de_fin = fopen(fout_name, "rb");
+        // FILE *de_fout = fopen("book_result.txt", "wb");
+        // decode(de_fin, de_fout);
+        // fclose(de_fin);
+        // fclose(de_fout);
 
         //Read file into buffer. 
         // char buf[BUFSIZE] = {0};
@@ -106,7 +152,7 @@ int main(int argc, char **argv){
         // }
         // printf("[: %s", (table_search(lookup, &test))->code);        
 
-        fclose(file);
+        // fclose(fout);
     }
     
 

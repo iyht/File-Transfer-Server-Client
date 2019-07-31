@@ -14,7 +14,7 @@
 /*
 write buffer patch to fd
  */
-void write_to_socket(int fd, char *buf, int nread){
+void write_to_socket(int fd, void *buf, int nread){
     int sendb = send(fd, buf, nread, 0);
     if(sendb == -1){
         perror("send\n");
@@ -49,12 +49,23 @@ void get_filename(char *filename){
 
 /*
  */
-void get_filenameinfo_socket(int fd, char *filename, char *fileinfo, int *size){
-    int fileinfo_size = recv(fd, fileinfo, BUFSIZE, 0);
-    if(fileinfo_size == -1){
-        perror("recv: when getting fileinfo.");
-        exit(1);
+void get_filenameinfo_socket(int fd, char *filename, char *fileinfo, int *size, int *recived_size){
+    char *fileinfo_ptr = fileinfo;
+    int counter = 0;
+    while(counter < 1024){
+        int fileinfo_size = recv(fd, fileinfo_ptr, 1, 0);
+        if(fileinfo_size == -1){
+            perror("recv: when getting fileinfo.");
+            exit(1);
+        }
+        if(fileinfo_ptr[0] == '*'){
+            break;
+        }
+        fileinfo_ptr++;
     }
+    // printf("fileinfo_size:%d, strlen:%lu", fileinfo_size, strlen(fileinfo));
+    // *recived_size += fileinfo_size - strlen(fileinfo);
+
     char *rest = fileinfo;
     strcpy(filename, strtok_r(rest, ",", &rest));
     *size = strtol(rest, NULL, 10);
@@ -80,7 +91,7 @@ void get_fileinfo_user(int *size, char *filename, char *fileinfo, FILE *file){
     }
     //sucess, append size to fileinfo
     *size = sb.st_size;
-    if(snprintf(fileinfo, BUFSIZE, "%s,%lld", filename, sb.st_size) < 0){
+    if(snprintf(fileinfo, BUFSIZE, "%s,%lld*", filename, sb.st_size) < 0){
         exit(1);
     }
 }
@@ -102,3 +113,41 @@ int check_internet_newline(char *buf, int nbytes){
     }
     
 }
+
+
+int ask_encode_file(FILE *file){
+    printf("Do you want to send the decode file with Huffman compression Y/N ?\n");
+    // while(((namesize = read(STDIN_FILENO, filename, BUFSIZE)) <= 0)){
+    //     if(namesize < 0){
+    //         perror("read file name\n");
+    //         exit(1);
+    //     }
+    //     else{
+    //         printf("Enter file name:\n");
+    //     }
+  
+    // }
+    // filename[namesize-1] = '\0';
+
+    char response[BUFSIZE];
+    int readsize = 0;
+    int result = -1;
+    while(1){
+        readsize = read(STDIN_FILENO, &response, BUFSIZE);
+        if(readsize < 0){
+            perror("read encode confirmation\n");
+            exit(1);
+        }
+        if(response[0] == 'Y' || response[0] == 'y'){
+            result = 0;
+            break;
+        }
+        if(response[0] == 'N' || response[0] == 'n'){
+            result = 1;
+            break;
+        }
+        
+    }
+    return result;
+}
+
