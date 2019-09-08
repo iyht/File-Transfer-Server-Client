@@ -6,5 +6,5 @@ face_training/mymodel1/
 
 
 *.pdf
-*.dSYM
+*.dSYM/
 *.o
