@@ -22,7 +22,7 @@ int main(){
         // char filename[BUFSIZE];
         printf("Waitting for File\n");
 
-        char filename[BUFSIZE] = {'\0'};
+        char filename[BUFSIZE/2] = {'\0'};
         char fileinfo[BUFSIZE] = {'\0'};
         int size = 0;
         char new_filename[BUFSIZE];

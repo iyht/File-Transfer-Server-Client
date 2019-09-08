@@ -22,7 +22,7 @@ int main(int argc, char **argv){
 
     while(1){
         //Get a filename from user
-        char filename[BUFSIZE];
+        char filename[BUFSIZE/2];
         int size = 0;
         char fileinfo[BUFSIZE];
         int total_read = 0;

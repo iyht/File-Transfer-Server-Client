@@ -63,9 +63,6 @@ void get_filenameinfo_socket(int fd, char *filename, char *fileinfo, int *size, 
         }
         fileinfo_ptr++;
     }
-    // printf("fileinfo_size:%d, strlen:%lu", fileinfo_size, strlen(fileinfo));
-    // *recived_size += fileinfo_size - strlen(fileinfo);
-
     char *rest = fileinfo;
     strcpy(filename, strtok_r(rest, ",", &rest));
     *size = strtol(rest, NULL, 10);

@@ -1,0 +1,4 @@
+face_training/datasets/
+data/
+*.pdf
+*.o
