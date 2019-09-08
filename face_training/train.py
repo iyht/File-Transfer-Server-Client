@@ -5,17 +5,25 @@ import numpy as np
 import cv2
 import os
 from sklearn.model_selection import train_test_split
-
-def read_image(path, images, labels, num_image):
+#os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+def read_image(path, images, labels, num_image, n):
     i = 0
     for image in os.listdir(path):
         if 'png' in image or 'jpg' in image:
             filename = path+'/'+image
             img = cv2.imread(filename, 0)
+            #print(filename, img)
+            #print(np.shape(img))
             img = np.ravel(img)
-            print(filename, img)
+            #print(filename, img)
+            #print(np.shape(img))
             images.append(img)
-            labels.append([1,0] if (name in image) else [0,1])
+            print(image)
+            if n == 'Haotian': l= [1,0,0]
+            elif n== 'Gaojing': l = [0,1,0]
+            else: l = [0,0,1]
+            print(l)
+            labels.append(l)
             i += 1
             if(i == num_image):
                 break
@@ -45,13 +53,13 @@ def compute_accuracy(v_xs, v_ys, sess, prediction):
 
 def construct_neuron_layer(x_image, keep_prob):
     # Conv Layer 1
-    W_conv1 = weight_variable([3, 3, 1,32])                  # kernel 3x3, grey scale image 1 layer, out size 32
+    W_conv1 = weight_variable([2, 2, 1,32])                  # kernel 3x3, grey scale image 1 layer, out size 32
     b_conv1 = bias_variable([32])
     h_conv1 = tf.nn.relu(conv2d(x_image, W_conv1) + b_conv1) # output size = 100x100x32
     h_pool1 = max_pool_2x2(h_conv1)                          # output size = 50x50x32
     
     # Conv Layer 2
-    W_conv2 = weight_variable([3,3,32,64])                   # kernel 3x3, in size(layers) 32, out size 64
+    W_conv2 = weight_variable([2,2,32,64])                   # kernel 3x3, in size(layers) 32, out size 64
     b_conv2 = bias_variable([64])
     h_conv2 = tf.nn.relu(conv2d(h_pool1, W_conv2) + b_conv2) # output size 50x50x64
     h_pool2 = max_pool_2x2(h_conv2)                          # output size 25x25x64
@@ -64,8 +72,8 @@ def construct_neuron_layer(x_image, keep_prob):
     h_fc1_drop = tf.nn.dropout(h_fc1, rate = 1-keep_prob)
     
     # Fully Connected Layer 2
-    W_fc2 = weight_variable([1024, 2])
-    b_fc2 = bias_variable([2])
+    W_fc2 = weight_variable([1024, 3])
+    b_fc2 = bias_variable([3])
     logits = tf.add(tf.matmul(h_fc1_drop, W_fc2),b_fc2)
     return logits
 
@@ -105,16 +113,25 @@ def train(images, labels, split_rate, learning_rate, num_epoch, batch_size):
 
 
 xs = tf.placeholder(tf.float32, [None, 10000])/255.
-ys = tf.placeholder(tf.float32, [None, 2])
+ys = tf.placeholder(tf.float32, [None, 3])
 keep_prob = tf.placeholder(tf.float32)
 x_image = tf.reshape(xs, [-1,100, 100, 1])
 
 if __name__ == '__main__':
     name = 'Haotian'
+    name1 = 'Gaojing'
     path = './datasets/'+ name
+    path1 = './datasets/'+ name1 
     other = './datasets/otherface'
     images = []
     labels = []
-    read_image(path, images, labels, 7000)
-    read_image(other, images, labels, 7000)
-    train(images, labels, split_rate =0.2, 0.001, num_epoch=10, batch_size=100)
+    read_image(path, images, labels, 7000, name)
+    read_image(path1, images, labels, 7000, name1)
+    read_image(other, images, labels, 7000, 'None')
+    images = np.array(images)
+    labels = np.array(labels)
+    p = np.random.permutation(len(images))
+    images = images[p]
+    labels = labels[p]
+    print(labels)
+    train(images, labels, 0.1, 0.0001, 2, 50)

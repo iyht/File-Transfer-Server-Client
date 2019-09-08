@@ -7,7 +7,7 @@ import random
 
 
 datasets = 'datasets'
-name = 'Haotian2'
+name = 'Gaojing'
 path = os.path.join(datasets, name)
 if not os.path.isdir(path):
     os.mkdir(path)
@@ -15,11 +15,11 @@ if not os.path.isdir(path):
 faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 
 
-video_capture = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(-1)
 detector = dlib.get_frontal_face_detector()
 
 
-counter = 1225
+counter = 0
 def relight(img, light=1, bias=0):
     w = img.shape[1]
     h = img.shape[0]
@@ -55,7 +55,7 @@ while True:
         face = frame[t:b, l:r] 
         face = relight(face, random.uniform(0.5, 1.5), random.randint(-60, 60))
         face_resize = cv2.resize(face, (100,100))
-        cv2.imwrite('% s/% s***% s.png' % (path, name, counter), face_resize)
+        cv2.imwrite('% s/% s% s.png' % (path, name, counter), face_resize)
         cv2.rectangle(frame, (l, t), (r, b), (0,255,0), 2)
         counter += 1
 ##################dlib#################################
@@ -79,7 +79,7 @@ while True:
     #     counter += 1
     # # Display the resulting frame
 ##################CV2#################################
-    if(counter == 12000):
+    if(counter == 8000):
         break
     cv2.imshow('Video', frame)
 
