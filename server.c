@@ -57,15 +57,18 @@ int main(){
 
         }
         printf("Expected Size:%d bytes, Received Size: %d bytes\n", size, recived_size);
-        char *first_char;
+        char *first_char = NULL;
         printf("%s hhhhhhh\n", filename);
         if( (first_char = strstr(new_filename, ".huf")) != NULL){
-            printf("hhhhhhh\n");
             *first_char = '\0';
             FILE *fout = fopen(new_filename, "wb");
             fseek(file, 0, 0);
             decode(file, fout);
             fclose(fout);
+        }
+        first_char = NULL;
+        // TODO: call python face recognization to classify image into different folder
+        if ((first_char = strstr(new_filename, ".png")) != NULL || (first_char = strstr(new_filename, ".jpg")) != NULL){
         }
         fclose(file);
     }
