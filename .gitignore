@@ -3,8 +3,12 @@ data/
 face_training/models/
 face_training/mymodel/
 face_training/mymodel1/
-
+.vscode/
+*.dSYM/
+.idea/
 
 *.pdf
-*.dSYM/
 *.o
+*.DS_Store
+
+
