@@ -13,12 +13,12 @@
 
 
 int main(int argc, char **argv){
-    if(argc != 2){
+    if(argc != 3){
         fprintf(stderr, "Usage ./client hostname PORT\n");
         exit(1);
     }
     //Connect to server *need error checking later*
-    int soc = connect_to_server(30000,argv[1]);
+    int soc = connect_to_server(atoi(argv[2]),argv[1]);
 
     while(1){
         //Get a filename from user
